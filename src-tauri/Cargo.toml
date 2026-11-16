@@ -2,7 +2,7 @@
 name = "astra-core"
 version = "1.2.0"
 description = "Astra-Core.sys — Personal AI Waifu & Desktop Companion"
-authors = ["HiroyukiKaito"]
+authors = ["Adidtia-Kaito"]
 edition = "2021"
 
 [lib]
