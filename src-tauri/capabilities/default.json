@@ -1,10 +1,7 @@
 {
   "$schema": "../gen/schemas/desktop-schema.json",
   "identifier": "default",
-  "description": "Capability for the main window",
+  "description": "Astra-Core desktop: core IPC + custom commands only. No shell/fs/opener plugins.",
   "windows": ["main"],
-  "permissions": [
-    "core:default",
-    "opener:default"
-  ]
+  "permissions": ["core:default"]
 }

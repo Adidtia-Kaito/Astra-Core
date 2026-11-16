@@ -15,6 +15,12 @@ __pycache__/
 *.pyc
 *.pyo
 
+# Python caches & build
+.pytest_cache/
+.mypy_cache/
+*.egg-info/
+build/
+
 # Env & Secrets
 .env
 *.env

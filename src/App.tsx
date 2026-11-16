@@ -1,18 +1,17 @@
-import { HashRouter, Routes, Route, Navigate } from "react-router-dom";
-import TempNav from "./components/TempNav";
-import OnboardingPage from "./pages/OnboardingPage";
-import DashboardPage from "./pages/DashboardPage";
+import { HashRouter, Navigate, Route, Routes } from "react-router-dom";
+import AppShell from "./components/layout/AppShell";
+import AboutPage from "./pages/AboutPage";
 import ChatPage from "./pages/ChatPage";
+import DashboardPage from "./pages/DashboardPage";
 import ImageGeneratorPage from "./pages/ImageGeneratorPage";
 import MusicRoomPage from "./pages/MusicRoomPage";
+import OnboardingPage from "./pages/OnboardingPage";
 import SettingsPage from "./pages/SettingsPage";
-import AboutPage from "./pages/AboutPage";
 
 export default function App() {
   return (
     <HashRouter>
-      <TempNav />
-      <main style={{ padding: 24 }}>
+      <AppShell>
         <Routes>
           <Route path="/" element={<Navigate to="/onboarding" replace />} />
           <Route path="/onboarding" element={<OnboardingPage />} />
@@ -24,7 +23,7 @@ export default function App() {
           <Route path="/about" element={<AboutPage />} />
           <Route path="*" element={<Navigate to="/dashboard" replace />} />
         </Routes>
-      </main>
+      </AppShell>
     </HashRouter>
   );
 }
